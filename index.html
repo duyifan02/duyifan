@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yifan Du | Personal Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">Yifan Du</div>
+      <button id="langToggle" class="lang-btn" aria-label="Toggle language">
+        中文 / EN
+      </button>
+    </header>
+
+    <main class="container">
+      <section class="hero card">
+        <p class="kicker" data-i18n="kicker">Research-oriented Robotics Engineer</p>
+        <h1 data-i18n="name">Yifan Du (杜艺帆)</h1>
+        <p class="subtitle" data-i18n="subtitle">
+          Master's student at Sun Yat-sen University, focused on Embodied AI, World Models, and Navigation Intelligence.
+        </p>
+        <div class="hero-tags">
+          <span>Embodied AI</span>
+          <span>VLN / VN</span>
+          <span>World Models</span>
+          <span>Navigation Planning</span>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2 data-i18n="about_title">About Me</h2>
+          <p data-i18n="about_body">
+            I build end-to-end robotics pipelines from perception and multimodal understanding to planning and real-world deployment.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2 data-i18n="focus_title">Research Focus</h2>
+          <ul>
+            <li data-i18n="focus_1">Embodied AI system design</li>
+            <li data-i18n="focus_2">Vision-Language Navigation and Visual Navigation</li>
+            <li data-i18n="focus_3">World-model-driven planning</li>
+            <li data-i18n="focus_4">Robot deployment and evaluation</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="card">
+        <h2 data-i18n="projects_title">Selected Projects</h2>
+        <div class="project-list">
+          <div class="project-item">
+            <h3>[Project Title]</h3>
+            <p data-i18n="project_tpl">[One-sentence summary and your contribution]</p>
+          </div>
+          <div class="project-item">
+            <h3>[Project Title]</h3>
+            <p data-i18n="project_tpl">[One-sentence summary and your contribution]</p>
+          </div>
+          <div class="project-item">
+            <h3>[Project Title]</h3>
+            <p data-i18n="project_tpl">[One-sentence summary and your contribution]</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2 data-i18n="edu_title">Education</h2>
+          <p data-i18n="edu_body">
+            M.S. in Electronic Science and Technology, School of Integrated Circuits, Sun Yat-sen University (Expected 2027).
+          </p>
+        </article>
+
+        <article class="card">
+          <h2 data-i18n="contact_title">Contact</h2>
+          <ul>
+            <li>Email: <span>[your_email@example.com]</span></li>
+            <li>GitHub: <span>[github.com/your_username]</span></li>
+            <li data-i18n="scholar_label">Google Scholar: [To be added]</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

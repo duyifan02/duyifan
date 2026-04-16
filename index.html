@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yifan Du | Personal Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">Yifan Du</div>
+      <nav class="nav-links">
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#experience" data-i18n="nav_experience">Experience</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <button id="langToggle" class="lang-btn" aria-label="Toggle language">中文 / EN</button>
+    </header>
+
+    <main class="container">
+      <section class="hero card">
+        <p class="kicker" data-i18n="kicker">Research-oriented Robotics Engineer</p>
+        <h1 data-i18n="name">Yifan Du (杜艺帆)</h1>
+        <p class="subtitle" data-i18n="subtitle">
+          Master's student at Sun Yat-sen University, focused on Embodied AI, World Models, and Navigation Intelligence.
+        </p>
+        <div class="hero-tags">
+          <span>Embodied AI</span>
+          <span>VLN / VN</span>
+          <span>World Models</span>
+          <span>Navigation Planning</span>
+          <span>Robot Deployment</span>
+        </div>
+      </section>
+
+      <section class="grid two-up">
+        <article class="card">
+          <h2 data-i18n="about_title">About Me</h2>
+          <p data-i18n="about_body">
+            I build end-to-end robotics pipelines from perception and multimodal understanding to planning and real-world deployment.
+          </p>
+        </article>
+
+        <article class="card" id="skills">
+          <h2 data-i18n="skills_title">Technical Skills</h2>
+          <ul>
+            <li data-i18n="skills_1">Programming: Python, C++, Linux scripting</li>
+            <li data-i18n="skills_2">AI/ML: PyTorch, multimodal learning workflows</li>
+            <li data-i18n="skills_3">Robotics: ROS/ROS2, navigation stack integration</li>
+            <li data-i18n="skills_4">Deployment: data collection, evaluation, iteration</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="card" id="projects">
+        <div class="section-head">
+          <h2 data-i18n="projects_title">Project Experience (STAR)</h2>
+          <span class="section-note" data-i18n="projects_note">Structured for recruiter/research review</span>
+        </div>
+
+        <div class="project-list">
+          <article class="project-item">
+            <div class="project-top">
+              <h3 data-i18n="p1_title">Multimodal Hierarchical Visual Navigation in Dynamic Worlds</h3>
+              <div class="chip-row">
+                <span class="chip">mLLM</span>
+                <span class="chip">Diffusion Policy</span>
+                <span class="chip">CARLA/Habitat</span>
+              </div>
+            </div>
+            <p data-i18n="p1_summary">
+              Designed a novel hierarchical navigation framework for dynamic environments and led full algorithm implementation under PyTorch + ROS2.
+            </p>
+            <div class="star-grid">
+              <div><strong data-i18n="star_s">S</strong><p data-i18n="p1_s">Dynamic environments make classic navigation pipelines brittle under scene changes.</p></div>
+              <div><strong data-i18n="star_t">T</strong><p data-i18n="p1_t">Build a robust hierarchical system integrating reasoning, policy, and deployment.</p></div>
+              <div><strong data-i18n="star_a">A</strong><p data-i18n="p1_a">Proposed mLLM + Diffusion Policy hierarchy, built CARLA/Habitat pipeline, completed Jetson + stereo + LiDAR platform validation.</p></div>
+              <div><strong data-i18n="star_r">R</strong><p data-i18n="p1_r">[Add quantitative gains, success rate, robustness metrics, and deployment logs here]</p></div>
+            </div>
+            <div class="project-actions">
+              <a class="project-link" href="https://github.com/s-team-git/SVD-Nav.git" target="_blank" rel="noreferrer noopener" data-i18n="project_view_repo">View Repository</a>
+            </div>
+          </article>
+
+          <article class="project-item">
+            <div class="project-top">
+              <h3 data-i18n="p2_title">Standalone Reconfigurable Ferroelectric Transistor for Neuromorphic Driving (Collab)</h3>
+              <div class="chip-row">
+                <span class="chip">Device + AI</span>
+                <span class="chip">Evaluation</span>
+                <span class="chip">Low-power</span>
+              </div>
+            </div>
+            <p data-i18n="p2_summary">
+              Led end-to-end experimental design and built a complete evaluation pipeline for neuromorphic feasibility analysis in autonomous-driving scenarios.
+            </p>
+            <div class="star-grid">
+              <div><strong data-i18n="star_s">S</strong><p data-i18n="p2_s">Need practical evidence for device-level neuromorphic computing in realistic workloads.</p></div>
+              <div><strong data-i18n="star_t">T</strong><p data-i18n="p2_t">Design full experiments and define metrics from basic characteristics to core functional behavior.</p></div>
+              <div><strong data-i18n="star_a">A</strong><p data-i18n="p2_a">Independently designed plans, executed key experiments, and established end-to-end performance evaluation process.</p></div>
+              <div><strong data-i18n="star_r">R</strong><p data-i18n="p2_r">[Add power/latency/accuracy improvements and comparison with baseline devices]</p></div>
+            </div>
+            <div class="project-actions">
+              <a class="project-link ghost" href="#" data-i18n="project_link_tba">Paper/Repo To Be Added</a>
+            </div>
+          </article>
+
+          <article class="project-item">
+            <div class="project-top">
+              <h3 data-i18n="p3_title">Autonomous Lawn Exploration & Mapping via Diffusion Policy + BEV</h3>
+              <div class="chip-row">
+                <span class="chip">BEV</span>
+                <span class="chip">Exploration</span>
+                <span class="chip">Outdoor Robot</span>
+              </div>
+            </div>
+            <p data-i18n="p3_summary">
+              Implemented a BEV perception-mapping framework and integrated it with diffusion-based exploration for end-to-end outdoor autonomy.
+            </p>
+            <div class="star-grid">
+              <div><strong data-i18n="star_s">S</strong><p data-i18n="p3_s">Outdoor unstructured environments require stable map representation and exploration policy.</p></div>
+              <div><strong data-i18n="star_t">T</strong><p data-i18n="p3_t">Convert front-view perception into unified top-down maps for planning and autonomous exploration.</p></div>
+              <div><strong data-i18n="star_a">A</strong><p data-i18n="p3_a">Built BEV projection and grid mapping stack, integrated with diffusion exploration policy, and deployed on robot platform.</p></div>
+              <div><strong data-i18n="star_r">R</strong><p data-i18n="p3_r">[Add coverage rate, map quality, runtime stability, and field test statistics]</p></div>
+            </div>
+            <div class="project-actions">
+              <a class="project-link" href="https://github.com/s-team-git/Lightweight-3DGS.git" target="_blank" rel="noreferrer noopener" data-i18n="project_view_repo">View Repository</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="grid two-up" id="experience">
+        <article class="card">
+          <h2 data-i18n="focus_title">Research Focus</h2>
+          <ul>
+            <li data-i18n="focus_1">Embodied AI system design</li>
+            <li data-i18n="focus_2">Vision-Language Navigation and Visual Navigation</li>
+            <li data-i18n="focus_3">World-model-driven planning</li>
+            <li data-i18n="focus_4">Robot deployment and evaluation</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2 data-i18n="edu_title">Education</h2>
+          <p data-i18n="edu_body">
+            M.S. in Electronic Science and Technology, School of Integrated Circuits, Sun Yat-sen University (Expected 2027).
+          </p>
+          <p class="muted" data-i18n="edu_hint">You can add advisor, lab, and coursework here.</p>
+        </article>
+      </section>
+
+      <section class="card" id="contact">
+        <h2 data-i18n="contact_title">Contact</h2>
+        <div class="contact-grid">
+          <a class="contact-item" href="mailto:your_email@example.com">
+            <strong>Email</strong>
+            <span>your_email@example.com</span>
+          </a>
+          <a class="contact-item" href="https://github.com/s-team-git" target="_blank" rel="noreferrer noopener">
+            <strong>GitHub</strong>
+            <span>github.com/s-team-git</span>
+          </a>
+          <div class="contact-item">
+            <strong>Google Scholar</strong>
+            <span data-i18n="scholar_label">[To be added]</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

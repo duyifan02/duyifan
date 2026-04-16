@@ -15,13 +15,9 @@
   <body>
     <header class="topbar">
       <div class="brand">Yifan Du</div>
-      <nav class="nav-links">
-        <a href="#projects" data-i18n="nav_projects">Projects</a>
-        <a href="#skills" data-i18n="nav_skills">Skills</a>
-        <a href="#experience" data-i18n="nav_experience">Experience</a>
-        <a href="#contact" data-i18n="nav_contact">Contact</a>
-      </nav>
-      <button id="langToggle" class="lang-btn" aria-label="Toggle language">中文 / EN</button>
+      <button id="langToggle" class="lang-btn" aria-label="Toggle language">
+        中文 / EN
+      </button>
     </header>
 
     <main class="container">
@@ -36,11 +32,10 @@
           <span>VLN / VN</span>
           <span>World Models</span>
           <span>Navigation Planning</span>
-          <span>Robot Deployment</span>
         </div>
       </section>
 
-      <section class="grid two-up">
+      <section class="grid">
         <article class="card">
           <h2 data-i18n="about_title">About Me</h2>
           <p data-i18n="about_body">
@@ -48,67 +43,6 @@
           </p>
         </article>
 
-        <article class="card" id="skills">
-          <h2 data-i18n="skills_title">Technical Skills</h2>
-          <ul>
-            <li data-i18n="skills_1">Programming: Python, C++, Linux scripting</li>
-            <li data-i18n="skills_2">AI/ML: PyTorch, multimodal learning workflows</li>
-            <li data-i18n="skills_3">Robotics: ROS/ROS2, navigation stack integration</li>
-            <li data-i18n="skills_4">Deployment: data collection, evaluation, iteration</li>
-          </ul>
-        </article>
-      </section>
-
-      <section class="card" id="projects">
-        <div class="section-head">
-          <h2 data-i18n="projects_title">Selected Projects</h2>
-          <span class="section-note" data-i18n="projects_note">Real repositories with ongoing updates</span>
-        </div>
-
-        <div class="project-list">
-          <article class="project-item">
-            <div class="project-top">
-              <h3>SVD-Nav</h3>
-              <div class="chip-row">
-                <span class="chip">Navigation</span>
-                <span class="chip">Embodied AI</span>
-              </div>
-            </div>
-            <p data-i18n="project_svd_desc">
-              A navigation-focused project repository for embodied AI and visual navigation exploration.
-            </p>
-            <ul class="project-points">
-              <li data-i18n="project_svd_point_1">Focus on practical navigation pipeline design and experimentation.</li>
-              <li data-i18n="project_svd_point_2">Supports future extension to VLN and planning modules.</li>
-            </ul>
-            <div class="project-actions">
-              <a class="project-link" href="https://github.com/s-team-git/SVD-Nav.git" target="_blank" rel="noreferrer noopener" data-i18n="project_view_repo">View Repository</a>
-            </div>
-          </article>
-
-          <article class="project-item">
-            <div class="project-top">
-              <h3>Lightweight-3DGS</h3>
-              <div class="chip-row">
-                <span class="chip">3D Vision</span>
-                <span class="chip">Efficiency</span>
-              </div>
-            </div>
-            <p data-i18n="project_3dgs_desc">
-              A lightweight 3D Gaussian Splatting project for efficient 3D scene representation and rendering.
-            </p>
-            <ul class="project-points">
-              <li data-i18n="project_3dgs_point_1">Emphasizes practical performance and lightweight implementation.</li>
-              <li data-i18n="project_3dgs_point_2">Useful for robotics perception and simulation-related tasks.</li>
-            </ul>
-            <div class="project-actions">
-              <a class="project-link" href="https://github.com/s-team-git/Lightweight-3DGS.git" target="_blank" rel="noreferrer noopener" data-i18n="project_view_repo">View Repository</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="grid two-up" id="experience">
         <article class="card">
           <h2 data-i18n="focus_title">Research Focus</h2>
           <ul>
@@ -118,32 +52,42 @@
             <li data-i18n="focus_4">Robot deployment and evaluation</li>
           </ul>
         </article>
+      </section>
 
+      <section class="card">
+        <h2 data-i18n="projects_title">Selected Projects</h2>
+        <div class="project-list">
+          <div class="project-item">
+            <h3>[Project Title]</h3>
+            <p data-i18n="project_tpl">[One-sentence summary and your contribution]</p>
+          </div>
+          <div class="project-item">
+            <h3>[Project Title]</h3>
+            <p data-i18n="project_tpl">[One-sentence summary and your contribution]</p>
+          </div>
+          <div class="project-item">
+            <h3>[Project Title]</h3>
+            <p data-i18n="project_tpl">[One-sentence summary and your contribution]</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid">
         <article class="card">
           <h2 data-i18n="edu_title">Education</h2>
           <p data-i18n="edu_body">
             M.S. in Electronic Science and Technology, School of Integrated Circuits, Sun Yat-sen University (Expected 2027).
           </p>
-          <p class="muted" data-i18n="edu_hint">You can add advisor, lab, and coursework here.</p>
         </article>
-      </section>
 
-      <section class="card" id="contact">
-        <h2 data-i18n="contact_title">Contact</h2>
-        <div class="contact-grid">
-          <a class="contact-item" href="mailto:your_email@example.com">
-            <strong>Email</strong>
-            <span>your_email@example.com</span>
-          </a>
-          <a class="contact-item" href="https://github.com/s-team-git" target="_blank" rel="noreferrer noopener">
-            <strong>GitHub</strong>
-            <span>github.com/s-team-git</span>
-          </a>
-          <div class="contact-item">
-            <strong>Google Scholar</strong>
-            <span data-i18n="scholar_label">[To be added]</span>
-          </div>
-        </div>
+        <article class="card">
+          <h2 data-i18n="contact_title">Contact</h2>
+          <ul>
+            <li>Email: <span>[your_email@example.com]</span></li>
+            <li>GitHub: <span>[github.com/your_username]</span></li>
+            <li data-i18n="scholar_label">Google Scholar: [To be added]</li>
+          </ul>
+        </article>
       </section>
     </main>
 

@@ -61,26 +61,29 @@
 
       <section class="card" id="projects">
         <div class="section-head">
-          <h2 data-i18n="projects_title">Selected Projects</h2>
-          <span class="section-note" data-i18n="projects_note">Real repositories with ongoing updates</span>
+          <h2 data-i18n="projects_title">Project Experience (STAR)</h2>
+          <span class="section-note" data-i18n="projects_note">Structured for recruiter/research review</span>
         </div>
 
         <div class="project-list">
           <article class="project-item">
             <div class="project-top">
-              <h3>SVD-Nav</h3>
+              <h3 data-i18n="p1_title">Multimodal Hierarchical Visual Navigation in Dynamic Worlds</h3>
               <div class="chip-row">
-                <span class="chip">Navigation</span>
-                <span class="chip">Embodied AI</span>
+                <span class="chip">mLLM</span>
+                <span class="chip">Diffusion Policy</span>
+                <span class="chip">CARLA/Habitat</span>
               </div>
             </div>
-            <p data-i18n="project_svd_desc">
-              A navigation-focused project repository for embodied AI and visual navigation exploration.
+            <p data-i18n="p1_summary">
+              Designed a novel hierarchical navigation framework for dynamic environments and led full algorithm implementation under PyTorch + ROS2.
             </p>
-            <ul class="project-points">
-              <li data-i18n="project_svd_point_1">Focus on practical navigation pipeline design and experimentation.</li>
-              <li data-i18n="project_svd_point_2">Supports future extension to VLN and planning modules.</li>
-            </ul>
+            <div class="star-grid">
+              <div><strong data-i18n="star_s">S</strong><p data-i18n="p1_s">Dynamic environments make classic navigation pipelines brittle under scene changes.</p></div>
+              <div><strong data-i18n="star_t">T</strong><p data-i18n="p1_t">Build a robust hierarchical system integrating reasoning, policy, and deployment.</p></div>
+              <div><strong data-i18n="star_a">A</strong><p data-i18n="p1_a">Proposed mLLM + Diffusion Policy hierarchy, built CARLA/Habitat pipeline, completed Jetson + stereo + LiDAR platform validation.</p></div>
+              <div><strong data-i18n="star_r">R</strong><p data-i18n="p1_r">[Add quantitative gains, success rate, robustness metrics, and deployment logs here]</p></div>
+            </div>
             <div class="project-actions">
               <a class="project-link" href="https://github.com/s-team-git/SVD-Nav.git" target="_blank" rel="noreferrer noopener" data-i18n="project_view_repo">View Repository</a>
             </div>
@@ -88,19 +91,45 @@
 
           <article class="project-item">
             <div class="project-top">
-              <h3>Lightweight-3DGS</h3>
+              <h3 data-i18n="p2_title">Standalone Reconfigurable Ferroelectric Transistor for Neuromorphic Driving (Collab)</h3>
               <div class="chip-row">
-                <span class="chip">3D Vision</span>
-                <span class="chip">Efficiency</span>
+                <span class="chip">Device + AI</span>
+                <span class="chip">Evaluation</span>
+                <span class="chip">Low-power</span>
               </div>
             </div>
-            <p data-i18n="project_3dgs_desc">
-              A lightweight 3D Gaussian Splatting project for efficient 3D scene representation and rendering.
+            <p data-i18n="p2_summary">
+              Led end-to-end experimental design and built a complete evaluation pipeline for neuromorphic feasibility analysis in autonomous-driving scenarios.
             </p>
-            <ul class="project-points">
-              <li data-i18n="project_3dgs_point_1">Emphasizes practical performance and lightweight implementation.</li>
-              <li data-i18n="project_3dgs_point_2">Useful for robotics perception and simulation-related tasks.</li>
-            </ul>
+            <div class="star-grid">
+              <div><strong data-i18n="star_s">S</strong><p data-i18n="p2_s">Need practical evidence for device-level neuromorphic computing in realistic workloads.</p></div>
+              <div><strong data-i18n="star_t">T</strong><p data-i18n="p2_t">Design full experiments and define metrics from basic characteristics to core functional behavior.</p></div>
+              <div><strong data-i18n="star_a">A</strong><p data-i18n="p2_a">Independently designed plans, executed key experiments, and established end-to-end performance evaluation process.</p></div>
+              <div><strong data-i18n="star_r">R</strong><p data-i18n="p2_r">[Add power/latency/accuracy improvements and comparison with baseline devices]</p></div>
+            </div>
+            <div class="project-actions">
+              <a class="project-link ghost" href="#" data-i18n="project_link_tba">Paper/Repo To Be Added</a>
+            </div>
+          </article>
+
+          <article class="project-item">
+            <div class="project-top">
+              <h3 data-i18n="p3_title">Autonomous Lawn Exploration & Mapping via Diffusion Policy + BEV</h3>
+              <div class="chip-row">
+                <span class="chip">BEV</span>
+                <span class="chip">Exploration</span>
+                <span class="chip">Outdoor Robot</span>
+              </div>
+            </div>
+            <p data-i18n="p3_summary">
+              Implemented a BEV perception-mapping framework and integrated it with diffusion-based exploration for end-to-end outdoor autonomy.
+            </p>
+            <div class="star-grid">
+              <div><strong data-i18n="star_s">S</strong><p data-i18n="p3_s">Outdoor unstructured environments require stable map representation and exploration policy.</p></div>
+              <div><strong data-i18n="star_t">T</strong><p data-i18n="p3_t">Convert front-view perception into unified top-down maps for planning and autonomous exploration.</p></div>
+              <div><strong data-i18n="star_a">A</strong><p data-i18n="p3_a">Built BEV projection and grid mapping stack, integrated with diffusion exploration policy, and deployed on robot platform.</p></div>
+              <div><strong data-i18n="star_r">R</strong><p data-i18n="p3_r">[Add coverage rate, map quality, runtime stability, and field test statistics]</p></div>
+            </div>
             <div class="project-actions">
               <a class="project-link" href="https://github.com/s-team-git/Lightweight-3DGS.git" target="_blank" rel="noreferrer noopener" data-i18n="project_view_repo">View Repository</a>
             </div>
